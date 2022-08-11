@@ -133,7 +133,3 @@ wave.1 <- wave.1 %>%
   group_by(sschlcde, w1_male) %>% 
   mutate(school_avg_GE = mean(w1.GE_male, na.rm=TRUE)) %>% ungroup()
 ################################################################################
-
-
-wave.1 %>% filter(w1_male == 1, sschlcde == '088') %>%
-  select(aid, sschlcde, w1.GE_male, school_avg_GE, w1.GE_male_std) %>% view()
